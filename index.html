@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.min.css"></head>
+<body>
+    
+    <main class="task">
+        <div class="wrapper">
+            <h1 class="task__title">My to do list</h1>
+            <form method="get" class="form">
+                <div class="form__text">
+                    <input type="text" name="descr" placeholder="" class="form__descr" maxlength="255">
+                    <input type="submit" value="Save" class="form__btn">
+                </div>
+                <div class="radio action">
+                    <input type="radio" name="sort" class="radio__btn radio__done" id="radio1" data-checked="">
+                    <label for="radio1" class="radio__label action__done">Todo Done: </label>
+                    <input type="radio" name="sort" class="radio__btn radio__progress" id="radio2" data-checked="checked" checked>
+                    <label for="radio2" class="radio__label action__progress">Todo On Progress: </label>
+                    
+                    
+                </div>
+            </form>
+            <section class="task__list">
+            </section>
+        </div>
+    </main>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
